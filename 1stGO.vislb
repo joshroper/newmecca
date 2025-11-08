@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AutoPlay>true</AutoPlay>
+            <Captions>false</Captions>
+            <Controls>true</Controls>
+            <GalleryName>1stGO</GalleryName>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>Fade</ImageEffect>
+            <ImageHeight>480</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink>true</ImageShrink>
+            <ImageStretch>false</ImageStretch>
+            <ImageTemplate>C:/Program Files/Visual Slideshow/templates/backgnd/darkglass/</ImageTemplate>
+            <ImageTemplateName>Dark Glass</ImageTemplateName>
+            <ImageWidth>640</ImageWidth>
+            <Images>true</Images>
+            <Loader>false</Loader>
+            <LoopPlay>true</LoopPlay>
+            <PublishIndex>index.html</PublishIndex>
+            <PublishPath>C:/Documents and Settings/Daniel ben Avram/My Documents/Webpages/New Mecca/1stGO_slideshow</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>90</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>120</ThumbWidth>
+            <Thumbnails>true</Thumbnails>
+        </Settings>
+        <Images>
+            <Image>
+                <url>C:/Documents and Settings/Daniel ben Avram/My Documents/Downloads/035.JPG</url>
+                <title>035</title>
+            </Image>
+            <Image>
+                <url>C:/Documents and Settings/Daniel ben Avram/My Documents/Downloads/037(2).JPG</url>
+                <title>037(2)</title>
+            </Image>
+            <Image>
+                <url>C:/Documents and Settings/Daniel ben Avram/My Documents/Webpages/New Mecca/MeccaFGO_Diners_at_window.JPG</url>
+                <title>MeccaFGO_Diners_at_window</title>
+            </Image>
+            <Image>
+                <url>C:/Documents and Settings/Daniel ben Avram/My Documents/Webpages/New Mecca/MeccaFGO_Diners.jpg</url>
+                <title>MeccaFGO_Diners</title>
+            </Image>
+            <Image>
+                <url>C:/Documents and Settings/Daniel ben Avram/My Documents/Downloads/030.JPG</url>
+                <title>030</title>
+            </Image>
+            <Image>
+                <url>C:/Documents and Settings/Daniel ben Avram/My Documents/Webpages/New Mecca/MeccaFGO_Marco_Daniel.jpg</url>
+                <title>MeccaFGO_Marco_Daniel</title>
+            </Image>
+            <Image>
+                <url>C:/Documents and Settings/Daniel ben Avram/My Documents/Webpages/New Mecca/MeccaFGO_Logo_on_card.jpg</url>
+                <title>MeccaFGO_Logo_on_card</title>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>
