@@ -22,11 +22,37 @@
     <title>The New Mecca Café, Pittsburg, Calfornia</title>
     <style>
 <!-- A{text-decoration:none} -->
+   .language-toggle {
+       position: fixed;
+       top: 10px;
+       right: 10px;
+       background: linear-gradient(45deg, #D32F2F, #F57C00, #388E3C);
+       border: 2px solid white;
+       color: white;
+       padding: 10px 20px;
+       border-radius: 25px;
+       cursor: pointer;
+       font-family: Arial, sans-serif;
+       font-weight: bold;
+       font-size: 14px;
+       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+       z-index: 9999;
+   }
+   .language-toggle:hover {
+       transform: scale(1.1);
+       box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+   }
+   .spanish-content {
+       display: none;
+   }
 </style>
     <meta name="generator" content="Namo WebEditor v6.0">
   </head>
   <body link="red" background="wertilea.jpg" alink="maroon" text="black"
     vlink="teal">
+
+    <button class="language-toggle" onclick="toggleLanguage()">🇲🇽 ES / EN 🇺🇸</button>
+
     <br>
     <br>
     <table cellpadding="4" border="1" bgcolor="silver" align="center"
@@ -65,34 +91,36 @@
                         size="+2"><font size="+1"></font></font><font
                         face="Arial" size="+2"><font size="+1"><font
                             face="Arial" size="+2"><font size="+1"><br>
-                              <a href="index.htm">HOME</a></font></font>&nbsp;&nbsp;
+							</font></font>&nbsp;&nbsp;
 
-
-
-
+                              <span class="english-content">
+							  <a href="index.htm">HOME</a>&nbsp;&nbsp;
                           <a href="50484_New%20Mecca_MASTER%20Menu_2024%20(2).pdf"
-                            target="_blank">RESTAURANT MENU</a>&nbsp;&nbsp;&nbsp;
-
-
-
-
-                          <a
-                            href="50484_%20New%20Mecca%20Catering%20Menu_2024.pdf"
+                            target="_blank">RESTAURANT TO-GO MENU</a>&nbsp;&nbsp;&nbsp;
+                            <a href="50484_%20New%20Mecca%20Catering%20Menu_2024.pdf"
                             target="_blank">CATERING MENU</a>&nbsp;&nbsp;
-
-
-
-
                           <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm" target="_blank"><font
-                              size="+1">ONLINE CATERING FORM</font></a><a
-href="https://www.yelp.com/biz/new-mecca-cafe-pittsburg-2"
-                            target="_blank"> </a></font><a
-                          href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm"
+                              size="+1">ONLINE CATERING FORM</font></a>
+                          </span>
+
+                          <span class="spanish-content">
+						  <a href="index.htm">INICIO</a>&nbsp;&nbsp;
+                          <a href="50484_New%20Mecca_MASTER%20Menu_2024%20(2).pdf"
+                            target="_blank">MENÚ RESTAURANTE</a>&nbsp;&nbsp;
+                          <a href="50484_%20New%20Mecca%20Catering%20Menu_2024.pdf"
+                            target="_blank">MENÚ CATERING</a>&nbsp;&nbsp;
+                          <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm" target="_blank"><font
+                              size="+1">FORMULARIO CATERING EN LÍNEA</font></a>
+                          </span>
+
+                          
+
+                          <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm"
                           target="_blank"><br>
                         </a><br>
                         <hr size="2" width="100%">
                         <div align="center"><font face="Arial" size="+2">
-                            <p align="justify"><img
+                            <p align="justify" class="english-content"><img
                                 src="f4c11fd0db1a227e.jpg" alt=""
                                 hspace="10" height="130" border="1"
                                 align="left" width="79" vspace="10"><font
@@ -103,9 +131,24 @@ href="https://www.yelp.com/biz/new-mecca-cafe-pittsburg-2"
                                   in&nbsp;the <i>Tour de France</i>,
                                   and coming to America.&nbsp;The <i>Tour's</i>
                                   loss was our gain: Guillermo
-                                  Muńiz left Guadalajara to pursue the American dream in the 
+                                  Muñiz left Guadalajara to pursue the American dream in the 
                                   1950s and eventually arrived in Pittsburg, California.</span></font></p>
-                            <p align="justify"><font face="Arial"><span
+
+                            <p align="justify" class="spanish-content"><img
+                                src="f4c11fd0db1a227e.jpg" alt=""
+                                hspace="10" height="130" border="1"
+                                align="left" width="79" vspace="10"><font
+                                face="Arial"><img src="Tere 3 poster.jpg" alt="" hspace="10" height="130" border="1" align="right" width="97" vspace="10"><span
+                                  style="font-size:12pt;">Érase una vez
+                                  un ciclista de clase mundial que tuvo que
+                                  elegir entre competir
+                                  en&nbsp;el <i>Tour de France</i>,
+                                  y venir a América.&nbsp;La pérdida del <i>Tour</i>
+                                  fue nuestra ganancia: Guillermo
+                                  Muñiz dejó Guadalajara para perseguir el sueño americano en los 
+                                  años 50 y finalmente llegó a Pittsburg, California.</span></font></p>
+
+                            <p align="justify" class="english-content"><font face="Arial"><span
                                   style="font-size:12pt;">While working
                                   two full-time jobs — at the local
                                   cannery and as a dishwasher 
@@ -115,8 +158,8 @@ href="https://www.yelp.com/biz/new-mecca-cafe-pittsburg-2"
                                   became a regular clubhouse caterer for the
                                   Oakland Athletics and the San Francisco
                                   Giants, and even provided food for players and staff at the MLB All-Star
-                                  Games when they were in The City (’84)
-                                  and in Oakland (’87)! Having also served food for the 49ers and Golden State Warriors, 
+                                  Games when they were in The City ('84)
+                                  and in Oakland ('87)! Having also served food for the 49ers and Golden State Warriors, 
 								  the Mecca is better known locally not only for having catered countless weddings, birthday parties, and other special events, 
 								  but also for its ongoing support of the community, including from sponsorsing youth sports, school events, scholarships, and community fundraisers. 
 								  Renovated and expanded in 2011,
@@ -125,7 +168,30 @@ href="https://www.yelp.com/biz/new-mecca-cafe-pittsburg-2"
                                   charm. It remains a mecca, a
                                   destination for South-of-the-border
                                   home cooking here in our own
-                                  PIttsburg.<br>
+                                  Pittsburg.<br>
+                                </span></font></p>
+
+                            <p align="justify" class="spanish-content"><font face="Arial"><span
+                                  style="font-size:12pt;">Mientras trabajaba
+                                  en dos empleos de tiempo completo — en la
+                                  enlatadora local y como lavaplatos 
+                                  — Guillermo conoció a su esposa, Teresa Guzmán, cuando ambos trabajaban en el Mecca original. 
+								  Continuaron
+                                  comprando el Mecca y luego se mudaron a su ubicación actual. El restaurante
+                                  se convirtió en un proveedor regular del club de los
+                                  Oakland Athletics y los San Francisco
+                                  Giants, ¡e incluso proporcionó comida para jugadores y personal en los Juegos de Estrellas de la MLB
+                                  cuando estaban en The City ('84)
+                                  y en Oakland ('87)! Habiendo servido también comida para los 49ers y Golden State Warriors, 
+								  el Mecca es mejor conocido localmente no solo por haber atendido innumerables bodas, fiestas de cumpleaños y otros eventos especiales, 
+								  sino también por su apoyo continuo a la comunidad, incluyendo el patrocinio de deportes juveniles, eventos escolares, becas y recaudaciones de fondos comunitarias. 
+								  Renovado y ampliado en 2011,
+                                  con su hermoso techo de cobre
+                                  , el New Mecca Cafe solo ha aumentado su encanto
+                                  local. Sigue siendo un meca, un
+                                  destino para la cocina casera del sur de la frontera
+                                  aquí en nuestro propio
+                                  Pittsburg.<br>
                                 </span></font></p>
                           </font>
 
@@ -134,7 +200,7 @@ href="https://www.yelp.com/biz/new-mecca-cafe-pittsburg-2"
                           </div>
 
 
-                        <p align="center">
+                        <p align="center" class="english-content">
 						<font face="Times New Roman"><span
                             style="font-size:18pt;">Saturday, April 16, 2011,
                             Guillermo was honored by the citizens and community of
@@ -142,14 +208,31 @@ href="https://www.yelp.com/biz/new-mecca-cafe-pittsburg-2"
 							<img src="WebBANNER.jpg"
                               hspace="16" height="145" border="1"
                               align="middle" width="400"></a></p><br>
+
+                        <p align="center" class="spanish-content">
+						<font face="Times New Roman"><span
+                            style="font-size:18pt;">Sábado, 16 de abril de 2011,
+                            Guillermo fue honrado por los ciudadanos y la comunidad de
+                            Pittsburg por su vida de servicio.</span><br><br>
+							<img src="WebBANNER.jpg"
+                              hspace="16" height="145" border="1"
+                              align="middle" width="400"></a></p><br>
 							  
                       </font><a href="Celebration.htm" target="_blank"><font
-                          face="Times New Roman"><span
+                          face="Times New Roman" class="english-content"><span
                             style="font-size:18pt;">Sunday, October 4,
                             2015 Guillermo was inducted into the
                             Pittsburg Entertainment &amp; Arts Hall of
-                            Fame. Guillermo, <i>ˇfelicitaciones!</i></span></font></a><font
-                        face="Arial" size="+2">
+                            Fame. Guillermo, <i>¡felicitaciones!</i></span></font></a>
+
+                      <a href="Celebration.htm" target="_blank"><font
+                          face="Times New Roman" class="spanish-content"><span
+                            style="font-size:18pt;">Domingo, 4 de octubre de
+                            2015 Guillermo fue incluido en el
+                            Salón de la Fama de Entretenimiento y Artes de
+                            Pittsburg. Guillermo, <i>¡felicitaciones!</i></span></font></a>
+
+                      <font face="Arial" size="+2">
                         <ul>
 
                           <table border="1" align="center" width="506">
@@ -175,6 +258,32 @@ href="https://www.yelp.com/biz/new-mecca-cafe-pittsburg-2"
       </tbody>
     </table>
    
+<script>
+let isEnglish = true;
+
+function toggleLanguage() {
+    isEnglish = !isEnglish;
+    
+    const englishElements = document.querySelectorAll('.english-content');
+    const spanishElements = document.querySelectorAll('.spanish-content');
+    
+    if (isEnglish) {
+        for (let i = 0; i < englishElements.length; i++) {
+            englishElements[i].style.display = 'block';
+        }
+        for (let i = 0; i < spanishElements.length; i++) {
+            spanishElements[i].style.display = 'none';
+        }
+    } else {
+        for (let i = 0; i < englishElements.length; i++) {
+            englishElements[i].style.display = 'none';
+        }
+        for (let i = 0; i < spanishElements.length; i++) {
+            spanishElements[i].style.display = 'block';
+        }
+    }
+}
+</script>
 
     border="0"&gt;
   </body>
