@@ -1,9 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html;
-      charset=windows-1252">
-    <meta name="Author" content="Daniel Zwickel ben Avram">
+    <meta charset="UTF-8">
+    <meta name="Author" content="Josh Roper">
     <meta name="keyword" content="New Mecca Cafe New Mecca Cafe New
       Mecca Cafe Guillermo Bill Muniz Pittsburg California great Mexican
       food New Mecca Cafe New Mecca Cafe New Mecca Cafe Guillermo Bill
@@ -45,6 +44,100 @@
    .spanish-content {
        display: none;
    }
+.carousel-container {
+    position: relative;
+    max-width: 832px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: inline-block;
+    width: auto;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+
+.carousel-image {
+    position: absolute;
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: block;
+}
+
+.carousel-image.active {
+    opacity: 1;
+    position: relative;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(211, 47, 47, 0.7);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: rgba(211, 47, 47, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Make food images larger */
+.carousel-image[src*="Comida"] {
+    min-width: 600px;
+    max-height: 800px;
+}
+/* Make family image larger */
+.carousel-image[src*="family"] {
+    min-width: 500px;
+    max-height: 800px;
+}
+/* Make sign image larger */
+.carousel-image[src*="NewNew"] {
+    min-width: 600px;
+    max-height: 800px;
+}
+
+@media (max-width: 900px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+    .carousel-image {
+        max-height: 400px;
+    }
+    .carousel-btn {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
 </style>
     <meta name="generator" content="Namo WebEditor v6.0">
   </head>
@@ -52,7 +145,7 @@
   <body vlink="teal" text="black" link="red" background="wertilea.jpg"
     alink="maroon">
 
-    <button class="language-toggle" onclick="toggleLanguage()">🇲🇽 ES / EN 🇺🇸</button>
+    <button class="language-toggle" onclick="toggleLanguage()">Español / English</button>
 
     <br>
     <table width="900" cellpadding="4" border="1" bgcolor="silver"
@@ -133,24 +226,54 @@ jsaction="agoMJf:PFBcW;usxOmf:aWLT7;jhKsnd:P7O7bd,F8DmGf;Q4AGo:Gm7gYd,qAKMYb;uFU
                               mouseover:qtZ4nf,c2aHje" jsname="W297wb"></span></span></span></font>
 
                       <p align="center" class="english-content"><b><font face="Arial"><span
-                              style="font-size:14pt;">Family owned and operated since 1964, the New Mecca Cafe is a cornerstone of downtown Pittsburg, and it is our honor to serve and support our community.</span></font></b></p>
+                              style="font-size:14pt;">Family owned and operated since 1964, the New Mecca Cafe is a cornerstone of downtown Pittsburg, offering traditional Mexican cuisine for dine-in, to-go, and catered events. 
+							  <br><br>Come on in, grab a booth, and get your bean dip! IYKYK <br>
+							  </span></font></b></p>
 
                       <p align="center" class="spanish-content"><b><font face="Arial"><span
-                              style="font-size:14pt;">De propiedad y operación familiar desde 1964, el New Mecca Cafe es una piedra angular del centro de Pittsburg, y es nuestro honor servir y apoyar a nuestra comunidad.</span></font></b></p>
+                              style="font-size:14pt;">Ha sido propiedad y trabajado por la familia Muñiz desde 1964, New Mecca Cafe es una piedra angular del centro de Pittsburg, ofreciendo cocina mexicana tradicional para comer en el restaurante, para llevar y eventos para fiestas o celebraciones especiales.
+							  <br><br>¡Entra, toma una mesa y pide tu dip de frijoles! ¡El que sabe sabe!<br>
+							  </span></font></b></p>
 
 
-                        <div align="center"><font size="+2" face="Arial"><font
-                              size="+1"><font color="#333399"><b><font
-                                    size="+2"><font size="+1"><font
-                                        size="+2" face="Arial"><font
-                                          size="+1"><font
-                                            color="#333399"><b><font
-                                                size="+2"><font
-                                                  size="+1"><br>
-                                                </font></font></b></font></font></font><img
-                                        src="NM_ComidaCollage.jpg"
-                                        alt="" width="832" height="113"
-                                        border="1"><br>
+
+<div class="carousel-container">
+    <div class="carousel">
+        <img src="NewMecca.png" alt="New Mecca Cafe" class="carousel-image active">
+        <img src="NewMecca_Comida!.jpeg" alt="New Mecca Dish" class="carousel-image">
+        <img src="NewMecca_Comida_2.jpeg" alt="New Mecca Dish" class="carousel-image">
+        <img src="NM_Comida_3.jpeg" alt="New Mecca Dish" class="carousel-image">
+        <img src="NewMecca_family.jpeg" alt="New Mecca Family" class="carousel-image">
+        <img src="NewNewMecca.jpg" alt="New Mecca Cafe" class="carousel-image">
+        <img src="037.jpg" alt="New Mecca" class="carousel-image">
+    </div>
+    <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+    <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+</div>
+<br>
+                                      <img src="purplediamond.gif"
+                                        alt="" width="16" height="16"><img
+                                        src="purplediamond.gif" alt=""
+                                        width="16" height="16"><img
+                                        src="purplediamond.gif" alt=""
+                                        width="16" height="16"></font></font></b></font></font></font><br>
+
+							<p align="center" class="english-content"><b><font face="Arial"><span
+								style="font-size:16pt;">Let us cater your next event! </span><br><span
+								style="font-size:14pt;"><br>
+							  Whether you're gathering friends to watch the big game, spoiling your co-workers with a catered lunch, or celebrating your wedding, Mecca food is always the perfect choice! <br> 
+							  <br>Catering orders are available for free pickup or delivery for a small fee, and don't forget to request servers if you need them!<br><br>
+							  Click the links above for the catering menu and online order form, or give us a call if you have a special request. <br>
+							  	</span></font></b></p>
+
+							<p align="center" class="spanish-content"><b><font face="Arial"><span
+								style="font-size:16pt;">¡Permítanos atender su próximo evento! </span><br><span
+								style="font-size:14pt;"><br>
+							  Ya sea que se esté reuniendo con amigos para ver el gran juego, consintiendo a sus compañeros de trabajo con un almuerzo entregado a domicilio, celebrando su boda, o celebración de vida ¡la comida de la Mecca siempre es la elección perfecta! <br> 
+							  <br>Los servicios de banquete están disponibles para ser entregados en el restaurante de manera gratuita o por una pequeña tarifa ser llevados a su domicilio, ¡y no olvide solicitar meseros si los necesita!<br><br>
+							  Haga clic en los enlaces arriba para el menú de catering y el formulario de pedido en línea, o llámenos si tiene una solicitud especial. <br>
+							  	</span></font></b></p>
+
                                       <br>
                                       <img src="purplediamond.gif"
                                         alt="" width="16" height="16"><img
@@ -173,8 +296,8 @@ jsaction="agoMJf:PFBcW;usxOmf:aWLT7;jhKsnd:P7O7bd,F8DmGf;Q4AGo:Gm7gYd,qAKMYb;uFU
 <a href="https://maps.google.com/maps?oe=utf-8&amp;client=firefox&amp;ie=UTF-8&amp;q=New+Mecca+cafe&amp;fb=1&amp;gl=us&amp;hq=new+mecca+cafe+map&amp;cid=15122083330070222342&amp;ei=Y8L7UqmBH8a0qwGBGQ&amp;ved=0CLsBEPwSMA4"
                                 target="_blank"><img
                                   src="MeccaScrot.png" alt=""
-                                  target="_blank" width="254"
-                                  height="231" border="1"></a></span></font>
+                                  target="_blank" width="500"
+                                  height="465" border="1"></a></span></font>
 <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=New+Mecca+Cafe+Pittsburg+california&amp;sll=37.0625,-95.677068&amp;sspn=33.764224,56.25&amp;ie=UTF8&amp;ll=38.034191,-121.88418&amp;spn=0.004098,0.006866&amp;z=17&amp;iwloc=A"
                             target="_blank"><font face="Arial"
                               color="red"><span style="font-size:12pt;"></span></font></a></b></p>
@@ -212,7 +335,7 @@ jsaction="agoMJf:PFBcW;usxOmf:aWLT7;jhKsnd:P7O7bd,F8DmGf;Q4AGo:Gm7gYd,qAKMYb;uFU
                               style="font-size:14pt;">Nuestro horario es de
                               10am</span></font><font face="Arial"><span
                               style="font-size:14pt;"> – 10pm, jueves
-                              a martes. </span></font></b><br><b><font
+                              a martes. <br></span></font></b><b><font
                             face="Arial"><span style="font-size:14pt;"></span></font><span
                             style="font-size:14pt;"><font face="Arial"
                               color="#ff0000">CERRADO LOS MIÉRCOLES.</font></span><font
@@ -231,9 +354,9 @@ jsaction="agoMJf:PFBcW;usxOmf:aWLT7;jhKsnd:P7O7bd,F8DmGf;Q4AGo:Gm7gYd,qAKMYb;uFU
                                               style="font-size:14pt;"><font
                                                 size="+2" face="Arial"><b><font
                                                     face="Arial"><span
-                                                      style="font-size:14pt;"></span></font></b></font></span></font></b></font></span></font></b></font><br>
-                              Órdenes para llevar: (925) 432-7433 <br>	Catering: (925) 432-2607 (o <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm"
-                            target="_blank">clic aquí</a>)</span></font></b></p>
+                                                      style="font-size:14pt;"></span></font></b></font></span></font></b></font></span></font></b></font><br><br>
+                              Órdenes para llevar: (925) 432-7433 <br>	Órdenes de catering: (925) 432-2607 (o <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm"
+                            target="_blank">haga clic aquí</a>)</span></font></b></p>
 
 
 
@@ -249,7 +372,7 @@ jsaction="agoMJf:PFBcW;usxOmf:aWLT7;jhKsnd:P7O7bd,F8DmGf;Q4AGo:Gm7gYd,qAKMYb;uFU
                       <hr width="90%"><br>
                       <p align="center"><img id="myphoto"
                           src="6055_1019768393297_1797798889_38570_3187160_n.jpg"
-                          seq="2" width="512" height="604"></p>
+                          seq="2" width="424" height="500"></p>
                       <p align="center"><font face="Arial"><span
                             style="font-size:10pt;">[This is Guillermo
                             behind the cash register, 1978 (not
@@ -264,11 +387,9 @@ jsaction="agoMJf:PFBcW;usxOmf:aWLT7;jhKsnd:P7O7bd,F8DmGf;Q4AGo:Gm7gYd,qAKMYb;uFU
                           face="Arial"><span style="font-size:10pt;">!]<br>
                           </span></font></p>
                     </font> <font size="+2" face="Arial"> </font>
-                    <div align="center"><font size="+2" face="Arial"><img
-                          src="NewMecca_collage.jpg" alt="" width="711"
-                          height="163"><br>
+                    <div align="center"><font size="+2" face="Arial">
                         <br>
-                        <font size="-1">11/24/2025</font><br>
+                        <font size="-1">11/26/2025</font><br>
                       </font></div>
                   </td>
                 </tr>
@@ -305,6 +426,35 @@ function toggleLanguage() {
     }
 }
 </script>
+<script>
+let currentSlide = 0;
+const images = document.querySelectorAll('.carousel-image');
+const totalSlides = images.length;
 
+function showSlide(n) {
+    images[currentSlide].classList.remove('active');
+    currentSlide = (n + totalSlides) % totalSlides;
+    images[currentSlide].classList.add('active');
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// Auto-rotate every 4 seconds
+let autoRotate = setInterval(function() {
+    changeSlide(1);
+}, 4000);
+
+// Pause auto-rotate when user clicks arrows
+document.querySelectorAll('.carousel-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        clearInterval(autoRotate);
+        autoRotate = setInterval(function() {
+            changeSlide(1);
+        }, 4000);
+    });
+});
+</script>
   </body>
 </html>
