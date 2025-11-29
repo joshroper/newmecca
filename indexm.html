@@ -145,19 +145,44 @@
         font-size: 16px !important;
     }
     
-    table[width="900"] {
+    /* Force all tables to be 100% width */
+    table[width="900"], table {
         width: 100% !important;
+        max-width: 100% !important;
     }
     
     table[cellpadding="24"] {
         padding: 10px !important;
     }
     
-    /* Make header images stack vertically on mobile */
-    table[width="900"] img {
+    /* Make header table cells stack vertically */
+    table[width="900"] > tbody > tr > td {
+        display: block !important;
+        width: 100% !important;
+    }
+    
+    /* Center the header images and make them responsive */
+    table[cellspacing="2"] td {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    
+    /* Make ALL images responsive */
+    img {
         max-width: 100% !important;
         height: auto !important;
         width: auto !important;
+    }
+    
+    /* Specifically target header images */
+    img[src="Guillermo_in_front_of_the_Mecca_cropped.png"],
+    img[src="NewMeccaPittsburg.gif"],
+    img[src="MeccaLogo_trans.gif"] {
+        max-width: 90% !important;
+        height: auto !important;
+        width: auto !important;
+        margin: 5px auto !important;
     }
     
     /* Increase font sizes for mobile */
@@ -178,11 +203,16 @@
         font-size: 16px !important;
     }
     
+    span[style*="font-size:10pt"] {
+        font-size: 14px !important;
+    }
+    
     /* Navigation links bigger on mobile */
     font[size="+2"] a {
-        font-size: 16px !important;
+        font-size: 14px !important;
         display: inline-block !important;
-        padding: 8px 12px !important;
+        padding: 6px 8px !important;
+        line-height: 1.4 !important;
     }
     
     /* Make the map image responsive */
@@ -201,10 +231,26 @@
     
     /* Language toggle button - make it smaller on mobile */
     .language-toggle {
-        padding: 8px 12px !important;
-        font-size: 12px !important;
+        padding: 6px 10px !important;
+        font-size: 11px !important;
         top: 5px !important;
         right: 5px !important;
+    }
+    
+    /* Make carousel images fit better on mobile */
+    .carousel-image[src*="Comida"] {
+        min-width: 300px !important;
+        max-height: 400px !important;
+    }
+    
+    .carousel-image[src*="family"] {
+        min-width: 300px !important;
+        max-height: 400px !important;
+    }
+    
+    .carousel-image[src*="NewNew"] {
+        min-width: 300px !important;
+        max-height: 400px !important;
     }
 }
 </style>
