@@ -1,14 +1,9 @@
 {
   "announcements": [
-    {
-      "message_en": "🎄 Holiday Hours: We will be CLOSED December 25th & January 1st. Happy Holidays!",
-      "message_es": "🎄 Horario de Vacaciones: Estaremos CERRADOS el 25 de diciembre y 1 de enero. ¡Felices Fiestas!",
-      "expireDate": "2026-01-02"
-    },
-    {
-      "message_en": "🌮 Tuesday Special: $2 Tacos all day!",
-      "message_es": "🌮 Especial de Martes: ¡Tacos a $2 todo el día!",
-      "expireDate": "2025-12-31"
-    }
+{
+  "message_en": "🎄 We will be open on Wednesday, December 24 for catering orders only. Last pickup/delivery time is 3:00PM, and all orders are due by December 17, 2025. We will be closed from December 24 through January 7. We look forward to seeing you on January 8, 2026!",
+  "message_es": "🎄 Estaremos abiertos el miércoles 24 de diciembre solo para órdenes de catering. La última hora de recogida/entrega es a las 3:00PM, y todos los pedidos deben hacerse antes del 17 de diciembre de 2025. Estaremos cerrados desde el 24 de diciembre hasta el 7 de enero. ¡Esperamos verlos el 8 de enero de 2026!",
+  "expireDate": "2026-01-08"
+}
   ]
 }
