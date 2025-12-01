@@ -7,6 +7,36 @@
     <meta name="keywords" content="New Mecca Cafe, Guillermo Bill Muniz, Pittsburg California, Mexican food, restaurant, catering">
     <title>New Mecca Café, Pittsburg, California</title>
     <style>
+        /* Announcement Banner */
+        .announcement-banner {
+            background: linear-gradient(45deg, #FF6B35, #F7931E);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin: -24px -24px 20px -24px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            animation: slideDown 0.5s ease-out;
+        }
+
+        .announcement-banner p {
+            margin: 8px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -190,25 +220,25 @@
             max-height: 700px;
             min-width: 500px;
         }
-		
-		/* Make building images larger */
+        
+        /* Make building images larger */
         .carousel-image[src*="NewNew"] {
             max-height: 700px;
             min-width: 500px;
         }
-		
-		/* Resize sign image  */
+        
+        /* Resize sign image  */
         .carousel-image[src*="37"] {
             max-height: 400px;
             min-width: 100px;
         }
-		
-		/* Resize building image  */
+        
+        /* Resize building image  */
         .carousel-image[src*="Out"] {
             max-height: 400px;
             min-width: 100px;
         }
-	
+    
         .carousel-image.active {
             opacity: 1;
             position: relative;
@@ -292,6 +322,16 @@
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .announcement-banner {
+                font-size: 14px;
+                padding: 12px 15px;
+                margin: -15px -15px 15px -15px;
+            }
+            
+            .announcement-banner p {
+                font-size: 14px;
+            }
+
             .outer-container {
                 margin: 10px;
                 padding: 2px;
@@ -388,6 +428,9 @@
 
     <div class="outer-container">
         <div class="inner-container">
+            <!-- Announcement Banner -->
+            <div id="announcement-banner" class="announcement-banner" style="display: none;"></div>
+
             <!-- Header Images -->
             <div class="header-images">
                 <img src="Guillermo_in_front_of_the_Mecca_cropped.png" alt="Guillermo" class="header-logo">
@@ -496,7 +539,7 @@
                 Órdenes de catering: (925) 432-2607 (o <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm" target="_blank">haga clic aquí</a>)</p>
             </div>
 
-			<hr style="width: 85%;">
+            <hr style="width: 85%;">
 
             <div class="content-section english-content">
                 <p style="color: #000099;"><i>"We cook with pride"</i> is not just a slogan. For your health, we cook only with corn oil (except for tamales)<br>
@@ -579,6 +622,61 @@
                 }, 4000);
             });
         });
+
+        // Announcement Banner System
+        async function loadAnnouncements() {
+            try {
+                const response = await fetch('announcements.json');
+                const data = await response.json();
+                const banner = document.getElementById('announcement-banner');
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                
+                const activeAnnouncements = data.announcements.filter(announcement => {
+                    const expireDate = new Date(announcement.expireDate);
+                    expireDate.setHours(23, 59, 59, 999);
+                    return expireDate >= today;
+                });
+                
+                if (activeAnnouncements.length > 0) {
+                    let englishHTML = '';
+                    let spanishHTML = '';
+                    
+                    activeAnnouncements.forEach(announcement => {
+                        englishHTML += `<p>${announcement.message_en}</p>`;
+                        spanishHTML += `<p>${announcement.message_es}</p>`;
+                    });
+                    
+                    banner.innerHTML = `
+                        <div class="english-content">${englishHTML}</div>
+                        <div class="spanish-content">${spanishHTML}</div>
+                    `;
+                    banner.style.display = 'block';
+                    
+                    updateAnnouncementLanguage();
+                }
+            } catch (error) {
+                console.log('No announcements to display');
+            }
+        }
+
+        function updateAnnouncementLanguage() {
+            const banner = document.getElementById('announcement-banner');
+            if (banner && banner.style.display !== 'none') {
+                const englishContent = banner.querySelectorAll('.english-content');
+                const spanishContent = banner.querySelectorAll('.spanish-content');
+                
+                englishContent.forEach(el => {
+                    el.style.display = isEnglish ? 'block' : 'none';
+                });
+                spanishContent.forEach(el => {
+                    el.style.display = isEnglish ? 'none' : 'block';
+                });
+            }
+        }
+
+        // Load announcements when page loads
+        loadAnnouncements();
     </script>
 </body>
 </html>
