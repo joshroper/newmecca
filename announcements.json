@@ -1,0 +1,14 @@
+{
+  "announcements": [
+    {
+      "message_en": "🎄 Holiday Hours: We will be CLOSED December 25th & January 1st. Happy Holidays!",
+      "message_es": "🎄 Horario de Vacaciones: Estaremos CERRADOS el 25 de diciembre y 1 de enero. ¡Felices Fiestas!",
+      "expireDate": "2026-01-02"
+    },
+    {
+      "message_en": "🌮 Tuesday Special: $2 Tacos all day!",
+      "message_es": "🌮 Especial de Martes: ¡Tacos a $2 todo el día!",
+      "expireDate": "2025-12-31"
+    }
+  ]
+}
