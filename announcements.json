@@ -3,6 +3,7 @@
     {
       "message_en": "🐣 We will be closed for Easter on Sunday, April 5.",
       "message_es": "🐣 Estaremos cerrados por Pascua el domingo 5 de abril.",
+      "startDate": "2026-03-19",
       "expireDate": "2026-04-06"
     },
     {
@@ -12,8 +13,8 @@
       "expireDate": "2026-05-11"
     },
     {
-      "message_en": "🇺🇸 We will be closed for Memorial Day on Monday, May 25.",
-      "message_es": "🇺🇸 Estaremos cerrados por el Día de los Caídos el lunes 25 de mayo.",
+      "message_en": We will be closed for Memorial Day on Monday, May 25.",
+      "message_es": "Estaremos cerrados por el Día de los Caídos el lunes 25 de mayo.",
       "startDate": "2026-05-04",
       "expireDate": "2026-05-26"
     }
