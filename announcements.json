@@ -1,8 +1,8 @@
 {
   "announcements": [
     {
-      "message_en": "NEW Monday & Tuesday Specials\\! Chilaquiles Monday, Taco Tuesday & the Tuesday Family Meal are here. <a href=\"specials.htm\" style=\"color:white; text-decoration:underline;\">See our Specials page\\!</a>",
-      "message_es": "NUEVOS Especiales de Lunes y Martes\\! Lunes de Chilaquiles, Martes de Tacos y la Comida Familiar del Martes ya estan disponibles. <a href=\"specials.htm\" style=\"color:white; text-decoration:underline;\">Vea nuestra pagina de Especiales\\!</a>",
+      "message_en": "NEW Monday & Tuesday Specials\! Chilaquiles Monday, Taco Tuesday & the Tuesday Family Meal are here. <a href=\"specials.htm\" style=\"color:white; text-decoration:underline;\">See our Specials page\!</a>",
+      "message_es": "NUEVOS Especiales de Lunes y Martes\! Lunes de Chilaquiles, Martes de Tacos y la Comida Familiar del Martes ya estan disponibles. <a href=\"specials.htm\" style=\"color:white; text-decoration:underline;\">Vea nuestra pagina de Especiales\!</a>",
       "startDate": "2026-04-28",
       "expireDate": "2026-12-31"
     },
