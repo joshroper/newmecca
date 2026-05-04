@@ -1,20 +1,20 @@
 {
   "announcements": [
     {
-      "message_en": "🐣 We will be closed for Easter on Sunday, April 5.",
-      "message_es": "🐣 Estaremos cerrados por Pascua el domingo 5 de abril.",
-      "startDate": "2026-03-19",
-      "expireDate": "2026-04-06"
+      "message_en": "NEW Monday & Tuesday Specials\\! Chilaquiles Monday, Taco Tuesday & the Tuesday Family Meal are here. <a href=\"specials.htm\" style=\"color:white; text-decoration:underline;\">See our Specials page\\!</a>",
+      "message_es": "NUEVOS Especiales de Lunes y Martes\\! Lunes de Chilaquiles, Martes de Tacos y la Comida Familiar del Martes ya estan disponibles. <a href=\"specials.htm\" style=\"color:white; text-decoration:underline;\">Vea nuestra pagina de Especiales\\!</a>",
+      "startDate": "2026-04-28",
+      "expireDate": "2026-12-31"
     },
     {
-      "message_en": "💐 We will be closed for Mother's Day on Sunday, May 10.",
-      "message_es": "💐 Estaremos cerrados por el Día de las Madres el domingo 10 de mayo.",
+      "message_en": "We will be closed for Mother's Day on Sunday, May 10.",
+      "message_es": "Estaremos cerrados por el Dia de las Madres el domingo 10 de mayo.",
       "startDate": "2026-04-19",
       "expireDate": "2026-05-11"
     },
     {
       "message_en": "We will be closed for Memorial Day on Monday, May 25.",
-      "message_es": "Estaremos cerrados por el Día de los Caídos el lunes 25 de mayo.",
+      "message_es": "Estaremos cerrados por el Dia de los Caidos el lunes 25 de mayo.",
       "startDate": "2026-05-04",
       "expireDate": "2026-05-26"
     }
