@@ -17,6 +17,18 @@
       "message_es": "Estaremos cerrados por el Día de la Independencia el sábado 4 de julio de 2026.",
       "startDate": "2026-06-15",
       "expireDate": "2026-07-05"
+    },
+    {
+      "message_en": "We will be closed for Labor Day on Monday, September 7.",
+      "message_es": "Estaremos cerrados por el Día del Trabajo el lunes 7 de septiembre.",
+      "startDate": "2026-08-17",
+      "expireDate": "2026-09-08"
+    },
+    {
+      "message_en": "We will be closed for Thanksgiving on Thursday, November 26.",
+      "message_es": "Estaremos cerrados por el Día de Acción de Gracias el jueves 26 de noviembre.",
+      "startDate": "2026-11-05",
+      "expireDate": "2026-11-27"
     }
   ]
 }
