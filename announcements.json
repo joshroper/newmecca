@@ -1,22 +1,22 @@
 {
   "announcements": [
     {
+      "message_en": "New Summer Hours! Now open until 11PM on Friday and Saturday nights!",
+      "message_es": "¡Nuevos Horarios de Verano! ¡Ahora abrimos hasta las 11PM los viernes y sábados por la noche!",
+      "startDate": "2026-06-15",
+      "expireDate": "2026-09-01"
+    },
+    {
       "message_en": "NEW Monday & Tuesday Specials! Chilaquiles Monday, Taco Tuesday & the Tuesday Family Meal are here. <a href=\"specials.htm\" style=\"color:white; text-decoration:underline;\">See our Specials page!</a>",
       "message_es": "NUEVOS Especiales de Lunes y Martes! Lunes de Chilaquiles, Martes de Tacos y la Comida Familiar del Martes ya estan disponibles. <a href=\"specials.htm\" style=\"color:white; text-decoration:underline;\">Vea nuestra pagina de Especiales!</a>",
       "startDate": "2026-04-28",
       "expireDate": "2026-12-31"
     },
     {
-      "message_en": "We will be closed for Mother's Day on Sunday, May 10.",
-      "message_es": "Estaremos cerrados por el Dia de las Madres el domingo 10 de mayo.",
-      "startDate": "2026-04-19",
-      "expireDate": "2026-05-11"
-    },
-    {
-      "message_en": "We will be closed for Memorial Day on Monday, May 25.",
-      "message_es": "Estaremos cerrados por el Dia de los Caidos el lunes 25 de mayo.",
-      "startDate": "2026-05-04",
-      "expireDate": "2026-05-26"
+      "message_en": "We will be closed for Independence Day on Saturday, July 4, 2026.",
+      "message_es": "Estaremos cerrados por el Día de la Independencia el sábado 4 de julio de 2026.",
+      "startDate": "2026-06-15",
+      "expireDate": "2026-07-05"
     }
   ]
 }
