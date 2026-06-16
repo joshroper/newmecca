@@ -633,9 +633,11 @@
                 today.setHours(0, 0, 0, 0);
                 
                 const activeAnnouncements = data.announcements.filter(announcement => {
+                    const startDate = new Date(announcement.startDate);
+                    startDate.setHours(0, 0, 0, 0);
                     const expireDate = new Date(announcement.expireDate);
                     expireDate.setHours(23, 59, 59, 999);
-                    return expireDate >= today;
+                    return today >= startDate && expireDate >= today;
                 });
                 
                 if (activeAnnouncements.length > 0) {
