@@ -1,8 +1,8 @@
 {
   "announcements": [
     {
-      "message_en": "Grown & Sexy Comedy Night is this Friday at the California Theatre — come see us for the $10 Chilaquiles Special before or after the show! <a href=\"ComedySpecial.jpg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">See the flyer</a>",
-      "message_es": "El Grown & Sexy Comedy Night es este viernes en el California Theatre — visitenos para el Especial de Chilaquiles por $10 antes o despues del show! <a href=\"ComedySpecial.jpg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">Ver el volante</a>",
+      "message_en": "<a href=\"ComedySpecial.jpg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">Grown & Sexy Comedy Night</a> is this Friday at the California Theatre — come by for our $10 Chilaquiles Special before or after the show!",
+      "message_es": "<a href=\"ComedySpecial.jpg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">El Grown & Sexy Comedy Night</a> es este viernes en el California Theatre — visitenos para el Especial de Chilaquiles por $10 antes o despues del show!",
       "startDate": "2026-06-29",
       "expireDate": "2026-07-04"
     },
