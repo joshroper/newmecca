@@ -1,6 +1,12 @@
 {
   "announcements": [
     {
+      "message_en": "ALERT: We are having intermittent phone issues, so please try calling again or come in to place your orders to go. We are open regular hours, including late this Friday and Saturday.",
+      "message_es": "ALERTA: Estamos teniendo problemas intermitentes con el teléfono, así que por favor intente llamar de nuevo o venga al restaurante para hacer su pedido para llevar. Estamos abiertos en nuestro horario regular, incluso hasta tarde este viernes y sábado.",
+      "startDate": "2026-10-08",
+      "expireDate": "2026-10-12"
+    },
+    {
       "message_en": "<a href=\"1010Comedyhr.jpeg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">Grown & Sexy Comedy Night</a> is Friday, October 10 at the California Theatre — come by for our $10 Chilaquiles Special before or after the show!",
       "message_es": "<a href=\"1010Comedyhr.jpeg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">El Grown & Sexy Comedy Night</a> es viernes 10 de Octubre en el California Theatre — visitenos para el Especial de Chilaquiles por $10 antes o despues del show!",
       "startDate": "2026-09-25",
