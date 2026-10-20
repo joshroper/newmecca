@@ -7,7 +7,7 @@
       "expireDate": "2026-10-26"
     },
     {
-      "message_en": "You asked for more specials, so here is one for Thursdays: <a href="specials.htm" target=\"_blank\" style=\"color:white; text-decoration:underline;\">Flautas!</a>",
+      "message_en": "You asked for more specials, so here is one for Thursdays: <a href=\"specials.htm"\ target=\"_blank\" style=\"color:white; text-decoration:underline;\">Flautas!</a>",
       "message_es": "Nos pidieron más especiales, así que aquí hay uno para los jueves: <a href=\"specials.htm\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">¡Flautas!</a>",
       "startDate": "2026-10-19",
       "expireDate": "2026-12-24"
