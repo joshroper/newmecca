@@ -4,7 +4,13 @@
       "message_en": "ALERT: We are having intermittent phone issues, so please try calling again or come in to place your orders to go. We are open regular hours, including late this Friday and Saturday.",
       "message_es": "ALERTA: Estamos teniendo problemas intermitentes con el teléfono, así que por favor intente llamar de nuevo o venga al restaurante para hacer su pedido para llevar. Estamos abiertos en nuestro horario regular, incluso hasta tarde este viernes y sábado.",
       "startDate": "2026-10-08",
-      "expireDate": "2026-10-12"
+      "expireDate": "2026-10-26"
+    },
+    {
+      "message_en": "You asked for more specials, so here is one for Thursdays: <a href=\"Flautas_Special_Flyer.jpeg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">Flautas!</a>",
+      "message_es": "Nos pidieron más especiales, así que aquí hay uno para los jueves: <a href=\"Flautas_Special_Flyer.jpeg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">¡Flautas!</a>",
+      "startDate": "2026-10-19",
+      "expireDate": "2026-12-24"
     },
     {
       "message_en": "<a href=\"1010Comedyhr.jpeg\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">Grown & Sexy Comedy Night</a> is Friday, October 10 at the California Theatre — come by for our $10 Chilaquiles Special before or after the show!",
