@@ -1,8 +1,8 @@
 {
   "announcements": [
     {
-      "message_en": "ALERT: We are having intermittent phone issues, so please try calling again or come in to place your orders to go. We are open regular hours, including late this Friday and Saturday.",
-      "message_es": "ALERTA: Estamos teniendo problemas intermitentes con el teléfono, así que por favor intente llamar de nuevo o venga al restaurante para hacer su pedido para llevar. Estamos abiertos en nuestro horario regular, incluso hasta tarde este viernes y sábado.",
+      "message_en": "ALERT: We are having intermittent phone issues, so please try calling again or come in to place your orders to go. We are open regular hours.",
+      "message_es": "ALERTA: Estamos teniendo problemas intermitentes con el teléfono, así que por favor intente llamar de nuevo o venga al restaurante para hacer su pedido para llevar. Estamos abiertos en nuestro horario regular.",
       "startDate": "2026-10-08",
       "expireDate": "2026-10-26"
     },
