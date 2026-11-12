@@ -3,6 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Family-owned New Mecca Cafe in Pittsburg, CA since 1964. Authentic Mexican food for dine-in, to-go and catering. View our menu, hours and weekly specials.">
+    <script>
+      /* Hide the page for a moment until announcements load (site.js reveals it);
+         the timer guarantees the page always appears. Also restores language choice. */
+      (function(){var d=document.documentElement;d.classList.add('js');
+      try{if(localStorage.getItem('meccaLang')==='es'){d.classList.add('es');d.lang='es';}}catch(e){}
+      setTimeout(function(){d.classList.add('ready');},2000);})();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20261112">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "New Mecca Cafe",
+  "description": "Family-owned Mexican restaurant in downtown Pittsburg, California, serving dine-in, to-go and catering since 1964.",
+  "url": "https://www.newmeccacafe.com/",
+  "image": "https://www.newmeccacafe.com/OutNewMecca.webp",
+  "logo": "https://www.newmeccacafe.com/MeccaLogo_trans.webp",
+  "telephone": "+1-925-432-7433",
+  "foundingDate": "1964",
+  "servesCuisine": "Mexican",
+  "menu": "https://www.newmeccacafe.com/52784_New%20Mecca_MASTER%20Menu_2024_8.5x14%20(1).pdf",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "324 Railroad Avenue",
+    "addressLocality": "Pittsburg",
+    "addressRegion": "CA",
+    "postalCode": "94565",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "22:00"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-925-432-2607",
+      "contactType": "catering orders"
+    }
+  ]
+}
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S98MPR5YDV"></script>
     <script>
@@ -15,440 +69,25 @@
     <meta name="Author" content="Josh Roper">
     <meta name="keywords" content="New Mecca Cafe, Guillermo Bill Muniz, Pittsburg California, Mexican food, restaurant, catering">
     <title>New Mecca Café, Pittsburg, California</title>
-    <style>
-        /* Announcement Banner */
-        .announcement-banner {
-            background: linear-gradient(45deg, #FF6B35, #F7931E);
-            color: white;
-            padding: 15px 20px;
-            text-align: center;
-            font-weight: bold;
-            font-size: 16px;
-            margin: -24px -24px 20px -24px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            animation: slideDown 0.5s ease-out;
-        }
-
-        .announcement-banner p {
-            margin: 8px 0;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: url('wertilea.jpg') repeat;
-            color: black;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: red;
-        }
-
-        a:visited {
-            color: teal;
-        }
-
-        a:hover {
-            color: maroon;
-        }
-
-        .language-toggle {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: linear-gradient(45deg, #FF0000, #388E3C);
-            border: 2px solid white;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            font-size: 14px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 9999;
-        }
-
-        .language-toggle:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-        }
-
-        .spanish-content {
-            display: none;
-        }
-
-        /* Main container */
-        .outer-container {
-            max-width: 1050px;
-            margin: 20px auto;
-            padding: 4px;
-            background: silver;
-            border: 1px solid #666;
-        }
-
-        .inner-container {
-            background: url('parch_bg.gif') repeat;
-            padding: 24px;
-            border: 1px solid #666;
-        }
-
-        /* Header section */
-        .header-images {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .header-images img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .header-logo {
-            width: 187px;
-        }
-
-        .header-title {
-            width: 516px;
-        }
-
-        .header-mecca {
-            width: 113px;
-        }
-
-        /* Navigation */
-        .navigation {
-            text-align: center;
-            padding: 20px 0;
-            border-top: 2px solid #333;
-            border-bottom: 2px solid #333;
-            margin: 20px 0;
-        }
-
-        .navigation a {
-            font-size: 16pt;
-            font-weight: bold;
-            margin: 0 5px;
-            display: inline-block;
-            padding: 5px 8px;
-            white-space: nowrap;
-        }
-
-        /* Content sections */
-        .content-section {
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        .content-section p {
-            font-weight: bold;
-            line-height: 1.8;
-            margin: 20px 0;
-        }
-
-        .large-text {
-            font-size: 18pt;
-        }
-
-        .medium-text {
-            font-size: 14pt;
-        }
-
-        .red-text {
-            color: #ff0000;
-        }
-
-        /* Carousel */
-        .carousel-wrapper {
-            display: flex;
-            justify-content: center;
-            margin: 30px 0;
-        }
-
-        .carousel-container {
-            position: relative;
-            max-width: 100%;
-            border: 1px solid #333;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            overflow: hidden;
-            background: #f5f5f5;
-        }
-
-        .carousel {
-            position: relative;
-            width: 100%;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .carousel-image {
-            position: absolute;
-            max-width: 100%;
-            max-height: 600px;
-            width: auto;
-            height: auto;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-            display: block;
-        }
-
-        /* Make comida images larger */
-        .carousel-image[src*="Comida"] {
-            max-height: 700px;
-            min-width: 500px;
-        }
-
-        /* Make family images larger */
-        .carousel-image[src*="family"] {
-            max-height: 700px;
-            min-width: 500px;
-        }
-        
-        /* Make building images larger */
-        .carousel-image[src*="NewNew"] {
-            max-height: 700px;
-            min-width: 500px;
-        }
-        
-        /* Resize sign image  */
-        .carousel-image[src*="37"] {
-            max-height: 400px;
-            min-width: 100px;
-        }
-        
-        /* Resize building image  */
-        .carousel-image[src*="Out"] {
-            max-height: 400px;
-            min-width: 100px;
-        }
-    
-        .carousel-image.active {
-            opacity: 1;
-            position: relative;
-        }
-
-        .carousel-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(211, 47, 47, 0.7);
-            color: white;
-            border: none;
-            font-size: 24px;
-            padding: 10px 15px;
-            cursor: pointer;
-            z-index: 10;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .carousel-btn:hover {
-            background: rgba(211, 47, 47, 0.9);
-            transform: translateY(-50%) scale(1.1);
-        }
-
-        .carousel-btn.prev {
-            left: 10px;
-        }
-
-        .carousel-btn.next {
-            right: 10px;
-        }
-
-        /* Decorative diamonds */
-        .diamonds {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .diamonds img {
-            margin: 0 2px;
-        }
-
-        /* Images */
-        .map-image, .photo-image {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #333;
-        }
-
-        .map-link {
-            display: inline-block;
-            margin: 20px 0;
-        }
-
-        /* Dividers */
-        hr {
-            margin: 20px auto;
-            border: 0;
-            border-top: 1px solid #000033;
-        }
-
-        .thick-hr {
-            border-top: 2px solid #333;
-        }
-
-        /* Footer text */
-        .footer-text {
-            text-align: center;
-            font-size: 10pt;
-            font-weight: normal;
-            margin: 20px 0;
-        }
-
-        .date-text {
-            font-size: 12px;
-            font-weight: normal;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .announcement-banner {
-                font-size: 14px;
-                padding: 12px 15px;
-                margin: -15px -15px 15px -15px;
-            }
-            
-            .announcement-banner p {
-                font-size: 14px;
-            }
-
-            .outer-container {
-                margin: 10px;
-                padding: 2px;
-            }
-
-            .inner-container {
-                padding: 15px;
-            }
-
-            /* Hide Guillermo and title images on mobile, only show logo */
-            .header-logo, .header-title {
-                display: none !important;
-            }
-
-            .header-images {
-                justify-content: center;
-            }
-
-            .header-mecca {
-                width: 150px;
-                max-width: 80%;
-            }
-
-            .navigation a {
-                font-size: 13px;
-                margin: 3px 2px;
-                padding: 5px 6px;
-                display: block;
-                width: 100%;
-            }
-
-            .content-section p {
-                font-size: 16px;
-            }
-
-            .large-text {
-                font-size: 18px;
-            }
-
-            .medium-text {
-                font-size: 16px;
-            }
-
-            .carousel {
-                min-height: 200px;
-            }
-
-            .carousel-image {
-                max-height: 400px;
-            }
-
-            .carousel-image[src*="Comida"] {
-                max-height: 400px;
-                min-width: 300px;
-            }
-
-            .carousel-btn {
-                font-size: 18px;
-                padding: 8px 12px;
-            }
-
-            .language-toggle {
-                padding: 8px 12px;
-                font-size: 12px;
-                top: 5px;
-                right: 5px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .navigation a {
-                font-size: 12px;
-                margin: 3px;
-                padding: 5px;
-            }
-
-            .carousel {
-                min-height: 150px;
-            }
-
-            .carousel-image {
-                max-height: 300px;
-            }
-
-            .carousel-image[src*="Comida"] {
-                max-height: 300px;
-                min-width: 250px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <button class="language-toggle" onclick="toggleLanguage()">Español / English</button>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <button type="button" class="language-toggle" onclick="toggleLanguage()">Español / English</button>
 
     <div class="outer-container">
         <div class="inner-container">
             <!-- Announcement Banner -->
-            <div id="announcement-banner" class="announcement-banner" style="display: none;"></div>
+            <div id="announcement-banner" class="announcement-banner" role="region" aria-label="Announcements" hidden></div>
 
             <!-- Header Images -->
             <div class="header-images">
-                <img src="Guillermo_in_front_of_the_Mecca_cropped.png" alt="Guillermo" class="header-logo">
-                <img src="NewMeccaPittsburg.gif" alt="New Mecca Pittsburg" class="header-title">
-                <img src="MeccaLogo_trans.gif" alt="Mecca Logo" class="header-mecca">
+                <img src="Guillermo_in_front_of_the_Mecca_cropped.webp" alt="Guillermo" class="header-logo" width="187" height="147">
+                <img src="NewMeccaPittsburg.gif" alt="New Mecca Pittsburg" class="header-title" width="516" height="147">
+                <img src="MeccaLogo_trans.webp" alt="Mecca Logo" class="header-mecca" width="113" height="147">
             </div>
 
             <!-- Navigation -->
-            <div class="navigation">
+            <nav class="navigation" aria-label="Main">
                 <span class="english-content">
                     <a href="history.htm">HISTORY</a>
                     <a href="52784_New%20Mecca_MASTER%20Menu_2024_8.5x14%20(1).pdf" target="_blank">RESTAURANT MENU</a>
@@ -461,7 +100,10 @@
                     <a href="000_%20New%20Mecca%20Catering%20Menu_2026.pdf" target="_blank">MENÚ CATERING</a>
                     <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm" target="_blank">FORMULARIO CATERING</a>
                 </span>
-            </div>
+            </nav>
+
+            <main id="main">
+            <h1 class="visually-hidden">New Mecca Cafe, Pittsburg, California</h1>
 
             <!-- Main Content -->
             <div class="content-section english-content">
@@ -480,16 +122,16 @@
             <div class="carousel-wrapper">
                 <div class="carousel-container">
                     <div class="carousel">
-                        <img src="OutNewMecca.png" alt="New Mecca Cafe" class="carousel-image active">
-                        <img src="NewMecca_Comida!.jpeg" alt="New Mecca Dish" class="carousel-image">
-                        <img src="NewMecca_Comida_2.jpeg" alt="New Mecca Dish" class="carousel-image">
-                        <img src="NM_Comida_3.jpeg" alt="New Mecca Dish" class="carousel-image">
-                        <img src="NewMecca_family.jpeg" alt="New Mecca Family" class="carousel-image">
-                        <img src="NewNewMecca.JPG" alt="New Mecca Cafe" class="carousel-image">
-                        <img src="037.JPG" alt="New Mecca" class="carousel-image">
+                        <img src="OutNewMecca.webp" alt="New Mecca Cafe" class="carousel-image active" width="863" height="528" fetchpriority="high" decoding="async">
+                        <img src="NewMecca_Comida1.webp" alt="New Mecca Dish" class="carousel-image" width="924" height="616" loading="lazy" decoding="async">
+                        <img src="NewMecca_Comida_2.webp" alt="New Mecca Dish" class="carousel-image" width="924" height="616" loading="lazy" decoding="async">
+                        <img src="NM_Comida_3.webp" alt="New Mecca Dish" class="carousel-image" width="924" height="616" loading="lazy" decoding="async">
+                        <img src="NewMecca_family.webp" alt="New Mecca Family" class="carousel-image" width="924" height="616" loading="lazy" decoding="async">
+                        <img src="NewNewMecca.webp" alt="New Mecca Cafe" class="carousel-image" width="924" height="616" loading="lazy" decoding="async">
+                        <img src="037.webp" alt="New Mecca" class="carousel-image" width="1200" height="900" loading="lazy" decoding="async">
                     </div>
-                    <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
-                    <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+                    <button type="button" class="carousel-btn prev" aria-label="Previous photo">❮</button>
+                    <button type="button" class="carousel-btn next" aria-label="Next photo">❯</button>
                 </div>
             </div>
 
@@ -531,25 +173,25 @@
 
             <div class="content-section">
                 <a href="https://maps.google.com/maps?oe=utf-8&client=firefox&ie=UTF-8&q=New+Mecca+cafe&fb=1&gl=us&hq=new+mecca+cafe+map&cid=15122083330070222342&ei=Y8L7UqmBH8a0qwGBGQ&ved=0CLsBEPwSMA4" target="_blank" class="map-link">
-                    <img src="MeccaScrot.png" alt="Map" class="map-image" width="500" height="465">
+                    <img src="MeccaScrot.webp" alt="Map" class="map-image" width="500" height="395" loading="lazy" decoding="async">
                 </a>
             </div>
 
             <!-- Hours Section -->
             <div class="content-section english-content">
                 <p>Our hours are 10am &ndash; 10pm, Thursday through Tuesday.<br>
-                <b>Late summer hours: open until 11pm on Fridays &amp; Saturdays!</b><br>
+                <!-- SUMMER HOURS (restore next summer): <b>Late summer hours: open until 11pm on Fridays &amp; Saturdays!</b><br> -->
                 We remain <span class="red-text">CLOSED WEDNESDAYS.</span></p>
                 <p>To go orders: (925) 432-7433<br>
-                Catering orders: (925) 432-2607 (or <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm" target="_blank">click here</a>)</p>
+                Catering orders: (925) 432-2607 (or <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm" target="_blank">use our online catering form</a>)</p>
             </div>
 
             <div class="content-section spanish-content">
                <p>Nuestro horario es de 10am &ndash; 10pm, jueves a martes.<br>
-                <b>&#161;Horario de verano: abiertos hasta las 11pm los viernes y s&aacute;bados!</b><br>
+                <!-- HORARIO DE VERANO (restore next summer): <b>&#161;Horario de verano: abiertos hasta las 11pm los viernes y s&aacute;bados!</b><br> -->
                 <span class="red-text">CERRADO LOS MIÉRCOLES.</span></p>
                 <p>Órdenes para llevar: (925) 432-7433<br>
-                Órdenes de catering: (925) 432-2607 (o <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm" target="_blank">haga clic aquí</a>)</p>
+                Órdenes de catering: (925) 432-2607 (o <a href="https://www.cognitoforms.com/NewMeccaCafe1/_2018CateringForm" target="_blank">use nuestro formulario de catering en línea</a>)</p>
             </div>
 
             <hr style="width: 85%;">
@@ -568,7 +210,7 @@
 
             <!-- Photo Section -->
             <div class="content-section">
-                <img id="myphoto" src="6055_1019768393297_1797798889_38570_3187160_n.jpg" alt="Guillermo 1978" class="photo-image" width="424" height="500">
+                <img id="myphoto" src="6055_1019768393297_1797798889_38570_3187160_n.webp" alt="Guillermo 1978" class="photo-image" width="424" height="500" loading="lazy" decoding="async">
                 
                 <p class="footer-text english-content">[This is Guillermo behind the cash register, 1978 (not Martin!—too much hair.)<br>
                 Thanks, <a href="http://www.facebook.com/pittsburgca" target="_blank">Pittsburg CA</a>, for the great <a href="http://www.facebook.com/pittsburgca?v=photos" target="_blank">Facebook Photos</a>!]</p>
@@ -577,121 +219,12 @@
                 Gracias, <a href="http://www.facebook.com/pittsburgca" target="_blank">Pittsburg CA</a>, por las excelentes <a href="http://www.facebook.com/pittsburgca?v=photos" target="_blank">Fotos de Facebook</a>!]</p>
             </div>
 
+            </main>
+
             <div class="date-text">6/29/2026</div>
         </div>
     </div>
 
-    <script>
-        let isEnglish = true;
-
-        function toggleLanguage() {
-            isEnglish = !isEnglish;
-            
-            const englishElements = document.querySelectorAll('.english-content');
-            const spanishElements = document.querySelectorAll('.spanish-content');
-            
-            if (isEnglish) {
-                for (let i = 0; i < englishElements.length; i++) {
-                    englishElements[i].style.display = 'block';
-                }
-                for (let i = 0; i < spanishElements.length; i++) {
-                    spanishElements[i].style.display = 'none';
-                }
-            } else {
-                for (let i = 0; i < englishElements.length; i++) {
-                    englishElements[i].style.display = 'none';
-                }
-                for (let i = 0; i < spanishElements.length; i++) {
-                    spanishElements[i].style.display = 'block';
-                }
-            }
-        }
-
-        let currentSlide = 0;
-        const images = document.querySelectorAll('.carousel-image');
-        const totalSlides = images.length;
-
-        function showSlide(n) {
-            images[currentSlide].classList.remove('active');
-            currentSlide = (n + totalSlides) % totalSlides;
-            images[currentSlide].classList.add('active');
-        }
-
-        function changeSlide(direction) {
-            showSlide(currentSlide + direction);
-        }
-
-        // Auto-rotate every 4 seconds
-        let autoRotate = setInterval(function() {
-            changeSlide(1);
-        }, 4000);
-
-        // Pause auto-rotate when user clicks arrows
-        document.querySelectorAll('.carousel-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                clearInterval(autoRotate);
-                autoRotate = setInterval(function() {
-                    changeSlide(1);
-                }, 4000);
-            });
-        });
-
-        // Announcement Banner System
-        async function loadAnnouncements() {
-            try {
-                const response = await fetch('announcements.json');
-                const data = await response.json();
-                const banner = document.getElementById('announcement-banner');
-                const today = new Date();
-                today.setHours(0, 0, 0, 0);
-                
-                const activeAnnouncements = data.announcements.filter(announcement => {
-                    const startDate = new Date(announcement.startDate);
-                    startDate.setHours(0, 0, 0, 0);
-                    const expireDate = new Date(announcement.expireDate);
-                    expireDate.setHours(23, 59, 59, 999);
-                    return today >= startDate && expireDate >= today;
-                });
-                
-                if (activeAnnouncements.length > 0) {
-                    let englishHTML = '';
-                    let spanishHTML = '';
-                    
-                    activeAnnouncements.forEach(announcement => {
-                        englishHTML += `<p>${announcement.message_en}</p>`;
-                        spanishHTML += `<p>${announcement.message_es}</p>`;
-                    });
-                    
-                    banner.innerHTML = `
-                        <div class="english-content">${englishHTML}</div>
-                        <div class="spanish-content">${spanishHTML}</div>
-                    `;
-                    banner.style.display = 'block';
-                    
-                    updateAnnouncementLanguage();
-                }
-            } catch (error) {
-                console.log('No announcements to display');
-            }
-        }
-
-        function updateAnnouncementLanguage() {
-            const banner = document.getElementById('announcement-banner');
-            if (banner && banner.style.display !== 'none') {
-                const englishContent = banner.querySelectorAll('.english-content');
-                const spanishContent = banner.querySelectorAll('.spanish-content');
-                
-                englishContent.forEach(el => {
-                    el.style.display = isEnglish ? 'block' : 'none';
-                });
-                spanishContent.forEach(el => {
-                    el.style.display = isEnglish ? 'none' : 'block';
-                });
-            }
-        }
-
-        // Load announcements when page loads
-        loadAnnouncements();
-    </script>
+    <script src="site.js?v=20261112" defer></script>
 </body>
 </html>
