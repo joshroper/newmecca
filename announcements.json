@@ -6,6 +6,18 @@
       "startDate": "2026-10-08",
       "expireDate": "2026-10-26"
     },
+        {
+      "message_en": "We will be closed for Thanksgiving on Thursday, November 26.",
+      "message_es": "Estaremos cerrados por el Día de Acción de Gracias el jueves 26 de noviembre.",
+      "startDate": "2026-11-05",
+      "expireDate": "2026-11-27"
+    },
+    {
+  "message_en": "Give the gift of Mecca, get the gift of Mecca! Get a $5 bonus card for every $25 in gift cards you buy, through Dec 24. <a href=\"giftcards.htm\" style=\"color:white; text-decoration:underline;\">Details</a>",
+  "message_es": "¡Regale la Mecca, reciba la Mecca! Reciba una tarjeta de bono de $5 por cada $25 en tarjetas de regalo que gaste, hasta el 24 de dic. <a href=\"giftcards.htm\" style=\"color:white; text-decoration:underline;\">Detalles</a>",
+  "startDate": "2026-11-20",
+  "expireDate": "2026-12-25"
+},
     {
       "message_en": "You asked for more specials, so here is one for Thursdays: <a href=\"specials.htm\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">Flautas!</a>",
       "message_es": "Nos pidieron más especiales, así que aquí hay uno para los jueves: <a href=\"specials.htm\" target=\"_blank\" style=\"color:white; text-decoration:underline;\">¡Flautas!</a>",
@@ -42,11 +54,6 @@
       "startDate": "2026-08-17",
       "expireDate": "2026-09-08"
     },
-    {
-      "message_en": "We will be closed for Thanksgiving on Thursday, November 26.",
-      "message_es": "Estaremos cerrados por el Día de Acción de Gracias el jueves 26 de noviembre.",
-      "startDate": "2026-11-05",
-      "expireDate": "2026-11-27"
-    }
+
   ]
 }
